@@ -2,6 +2,16 @@ import { defineNuxtConfig } from 'nuxt/config'
 
 export default defineNuxtConfig({
   ssr: true,
+  future: {
+    compatibilityVersion: 4,
+  },
+  features: {
+    inlineStyles: false
+  },
+  experimental: {
+    payloadExtraction: true,
+    renderJsonPayloads: true
+  },
   css: ['~/assets/scss/main.scss'],
   components: [
     {
@@ -11,13 +21,8 @@ export default defineNuxtConfig({
   ],
   modules: ['@vite-pwa/nuxt'],
   
-  features: {
-    inlineStyles: false
-  },
-  experimental: {
-    payloadExtraction: true,
-    renderJsonPayloads: true
-  },
+  
+  
   vite: {
     css: {
       preprocessorOptions: {

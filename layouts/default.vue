@@ -7,7 +7,7 @@
     <div class="app-wrapper">
         <AppHeader/>
         <main class="app-main">
-            <RouterView/>
+            <slot/>
         </main>
         <AppFooter/>
     </div>
