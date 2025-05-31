@@ -1,9 +1,9 @@
 <script lang="ts" setup>
-    definePageMeta({
-        layout: 'default'
-    })
+definePageMeta({
+  layout: 'default'
+});
 </script>
 
 <template>
-    <HeroSection/>
+  <HeroSection/>
 </template>

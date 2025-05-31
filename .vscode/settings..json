@@ -1,0 +1,27 @@
+{
+  "eslint.experimental.useFlatConfig": true,
+  "eslint.rules.customizations": [
+    { "rule": "import/*", "severity": "warn" },
+    { "rule": "unused-imports/*", "severity": "warn" }
+  ],
+  "eslint.validate": [
+    "javascript",
+    "typescript",
+    "vue",
+    "html",
+    "markdown"
+  ],
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+  "eslint.probe": [
+    "javascript",
+    "typescript",
+    "vue",
+    "html",
+    "markdown"
+  ],
+  "eslint.codeAction.showDocumentation": {
+    "enable": true
+  }
+}

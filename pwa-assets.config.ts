@@ -1,7 +1,6 @@
 import {
-  defineConfig,
-  minimal2023Preset as preset
-} from '@vite-pwa/assets-generator/config'
+  defineConfig
+} from '@vite-pwa/assets-generator/config';
 
 export default defineConfig({
   headLinkOptions: {
@@ -9,15 +8,15 @@ export default defineConfig({
   },
   preset: {
     transparent: {
-        sizes: [64, 192, 512],
-        favicons: [[48, "favicon.iso"], [64, "favicon.iso"]]
+      sizes: [64, 192, 512],
+      favicons: [[48, 'favicon.iso'], [64, 'favicon.iso']]
     },
     maskable: {
-        sizes: [512]
+      sizes: [512]
     },
     apple: {
-        sizes: [180]
+      sizes: [180]
     },
   },
   images: ['public/logo.svg']
-})
+});
