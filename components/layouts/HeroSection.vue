@@ -3,11 +3,11 @@
 </script>
 
 <template>
-    <section class="section hero-section">
-            <div class="_container">
-            <p>dfdb</p>
-        </div>
-    </section>
+  <section class="section hero-section">
+    <div class="_container">
+      <p>dfdb</p>
+    </div>
+  </section>
 </template>
 
 <style scoped lang="scss">
