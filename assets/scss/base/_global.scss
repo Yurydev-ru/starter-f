@@ -7,7 +7,8 @@ body {
 
 .app-footer,
 .app-header {
-    background-color: #1a1a1a;
+    // background: #212121;
+background: linear-gradient(90deg, rgba(33, 33, 33, 1) 0%, rgba(25, 178, 212, 1) 50%, rgba(26, 25, 25, 1) 100%);
 }
 
 .app-wrapper {

@@ -16,10 +16,10 @@
         height: 1px;
         background-color: aqua;
         position: absolute;
-        bottom: 0;
+        bottom: 2px;
         left: 0;
         transform: scale(0);
-        transform-origin: left;
+        transform-origin: center;
         transition: transform ease 0.5s;
     }
 

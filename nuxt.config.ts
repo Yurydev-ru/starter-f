@@ -22,7 +22,7 @@ export default defineNuxtConfig({
       pathPrefix: false
     },
   ],
-  modules: ['@vite-pwa/nuxt', '@nuxtjs/color-mode'],
+  modules: ['@vite-pwa/nuxt'],
   imports: {
     dirs: ['shared/types']
   },

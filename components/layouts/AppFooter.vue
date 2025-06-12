@@ -10,7 +10,7 @@
         <NuxtLink class="_link" to="/contact">Contact</NuxtLink>
         <NuxtLink class="_link" to="/blog">Blog</NuxtLink>
       </div>
-        </nav>
+    </nav>
   </footer>
 </template>
 

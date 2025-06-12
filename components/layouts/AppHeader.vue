@@ -11,11 +11,5 @@
         <p>Style for Life</p>
       </NuxtLink>
     </div>
-    </header>
+  </header>
 </template>
-
-<style scoped lang="scss">
-.app-header {
-  background-color: #1a1a1a;
-}
-</style>
