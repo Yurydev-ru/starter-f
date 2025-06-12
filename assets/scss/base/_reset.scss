@@ -14,7 +14,8 @@ p,
 figure,
 blockquote,
 dl,
-dd {
+dd,
+body {
     margin: 0;
 }
 
@@ -30,10 +31,9 @@ html:focus-within {
 }
 
 
-a:not([class]) {
-    text-decoration-skip-ink: auto;
+._link {
+    text-decoration: none;
 }
-
 
 img,
 picture {

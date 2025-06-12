@@ -4,13 +4,18 @@
 
 <template>
   <header class="app-header">
-    <div class="_container">
-      <h1>Hello</h1>
-      <p>Lorem, ipsum.</p>
+    <div class="container">
+      <NuxtLink class="logo _link" to="/">
+        <p>Designe</p>
+        <p>it`s the</p>
+        <p>Style for Life</p>
+      </NuxtLink>
     </div>
-  </header>
+    </header>
 </template>
 
 <style scoped lang="scss">
-    
+.app-header {
+  background-color: #1a1a1a;
+}
 </style>

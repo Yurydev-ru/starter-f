@@ -1,8 +1,13 @@
 body {
     font-size: var(--font-size-base);
-    background: var(--bg-primary);
     height: 100vh;
     max-width: 100vw;
+    color: var(--text-block);
+}
+
+.app-footer,
+.app-header {
+    background-color: #1a1a1a;
 }
 
 .app-wrapper {
@@ -15,7 +20,6 @@ body {
 }
 
 .app-main {
-    background: green;
     flex: 1 1 auto;
     overflow-y: auto;
 }
