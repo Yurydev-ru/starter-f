@@ -1,14 +1,28 @@
 body {
+   background-image: linear-gradient(to right, #434343 0%, black 100%);
     font-size: var(--font-size-base);
     height: 100vh;
     max-width: 100vw;
     color: var(--text-block);
 }
 
-.app-footer,
+.app-header,
+.app-footer {
+    position: fixed;
+    width: 100%;
+    left: -15px;
+}
+
 .app-header {
-    // background: #212121;
-background: linear-gradient(90deg, rgba(33, 33, 33, 1) 0%, rgba(25, 178, 212, 1) 50%, rgba(26, 25, 25, 1) 100%);
+    top: 20px;
+    z-index: 1;
+    
+}
+
+.app-footer {
+    bottom: 20px;
+    z-index: 1;
+    box-shadow: 0 -4px 12px rgba(26, 25, 25, 0.05);
 }
 
 .app-wrapper {
@@ -18,6 +32,7 @@ background: linear-gradient(90deg, rgba(33, 33, 33, 1) 0%, rgba(25, 178, 212, 1)
     width: 100%;
     height: 100vh;
     overflow: hidden;
+    
 }
 
 .app-main {

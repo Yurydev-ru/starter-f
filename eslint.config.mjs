@@ -64,7 +64,7 @@ export default [
       'stylistic/object-curly-spacing': ['error', 'always'],
       'stylistic/array-bracket-spacing': ['error', 'never'],
       'stylistic/max-len': ['warn', { 
-        code: 120, 
+        code: 80, 
         ignoreComments: true,
         ignoreUrls: true,
         ignoreTemplateLiterals: true
@@ -174,7 +174,11 @@ export default [
             tolerant: true,
         },
         rules: {
-            "css/no-empty-blocks": "error",
+          "css/no-empty-blocks": "off",
+    "scss/no-empty-blocks": "error",
+    "css/selector-max-type": ["error", { max: 1 }],
+"css/no-redundant-values": "error",
+"css/color-no-invalid-hex": "error"
         },
     plugins: {
       css: cssPlugin

@@ -16,9 +16,10 @@
 
 <style scoped lang="scss">
   .app-nav__container {
+    background-color: rgba(31,31,31, 0.2);
+    backdrop-filter: blur(8px);
     display: flex;
     justify-content: space-between;
-    width: 40%;
     padding: 20px 0;
   }
 </style>
