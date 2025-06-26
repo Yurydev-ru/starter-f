@@ -1,7 +1,7 @@
 import { defineNuxtConfig } from 'nuxt/config';
 
 export default defineNuxtConfig({
-  ssr: true,
+  ssr: false,
   nitro: {
     preset: 'vercel',
   },
@@ -15,22 +15,19 @@ export default defineNuxtConfig({
     payloadExtraction: true,
     renderJsonPayloads: true
   },
+  hooks: {
+    'app:resolve'(app) {
+      app.middleware = app.middleware.filter(mw => !/\/index\.[^/]+$/.test(mw.path))
+    }
+  },
   css: ['~/assets/scss/main.scss'],
   components: [
-    {
-      path: '~/components',
-      pathPrefix: false
-    },
+    { path: 'app/components', pathPrefix: false },
+    { path: 'layers/**/components', pathPrefix: false }
   ],
   modules: ['@vite-pwa/nuxt'],
-  imports: {
-    dirs: ['shared/types']
-  },
   vite: {
-    define: {
-      __VUE_PROD_DEVTOOLS__: false
-    },
-    css: {
+      css: {
       preprocessorOptions: {
         scss: {
           additionalData: `
@@ -41,7 +38,6 @@ export default defineNuxtConfig({
       }
     },
   },
-
   devtools: {
     enabled: true,
     timeline: {
@@ -49,7 +45,6 @@ export default defineNuxtConfig({
     },
   },
   compatibilityDate: '2025-05-15',
-
   pwa: {
     manifest: {
       name: 'Nuxt 3 Starter',
@@ -97,5 +92,4 @@ export default defineNuxtConfig({
       type: 'module'
     }
   }
-
 });
