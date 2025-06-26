@@ -17,5 +17,14 @@
 </template>
 
 <style scoped lang="scss">
-// 
+.glass {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  z-index: 1;
+  box-shadow: 0 -4px 12px rgba(26, 25, 25, 0.05);
+  background-color: rgba(31,31,31, 0.2);
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+}
 </style>

@@ -19,8 +19,6 @@
 </template>
 
 <style scoped lang="scss">
-
-
 .glass {
   width: 100%;
   position: absolute;

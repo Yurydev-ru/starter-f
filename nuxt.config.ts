@@ -15,16 +15,25 @@ export default defineNuxtConfig({
     payloadExtraction: true,
     renderJsonPayloads: true
   },
-  hooks: {
-    'app:resolve'(app) {
-      app.middleware = app.middleware.filter(mw => !/\/index\.[^/]+$/.test(mw.path))
-    }
+  app: {
+    baseURL: '/',
+    head: {
+      title: 'Nuxt 3 Starter',
+      meta: [
+        { charset: 'utf-8' },
+        { name: 'viewport', content: 'width=device-width, initial-scale=1'},
+        { name: 'description', content: 'Nuxt 3 Starter' },
+        
+      ],
+    },
   },
   css: ['~/assets/scss/main.scss'],
-  components: [
+  components: {
+    dirs: [
     { path: 'app/components', pathPrefix: false },
     { path: 'layers/**/components', pathPrefix: false }
-  ],
+  ]
+  },
   modules: ['@vite-pwa/nuxt'],
   vite: {
       css: {
