@@ -3,7 +3,7 @@ import { defineNuxtConfig } from 'nuxt/config';
 export default defineNuxtConfig({
   ssr: true,
   nitro: {
-    preset: 'versel',
+    preset: 'vercel',
   },
   future: {
     compatibilityVersion: 4,
