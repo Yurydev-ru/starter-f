@@ -46,14 +46,14 @@ export default [
       'vue': vuePlugin,
       '@typescript-eslint': tsPlugin,
       'import': importsPlugin,
-      'css': cssPlugin,
       'html': htmlPlugin,
       'markdown': markdownPlugin,
       'unused-imports': unusedImportsPlugin,
       'eslint-comments': commentsPlugin,
       'jsdoc': jsdocPlugin,
       'promise': promisePlugin,
-      'stylistic': stylisticPlugin
+      'stylistic': stylisticPlugin,
+      'cssPlugin': '@eslint/css'
     },
     rules: {
       // Стилистические правила
@@ -167,21 +167,20 @@ export default [
   },
 
   // Конфиг для CSS/SCSS
-  {
-    files: ['**/*.{css,scss}'],
-    language: 'css/css',
-    languageOptions: {
-            tolerant: true,
-        },
-        rules: {
-          "css/no-empty-blocks": "off",
-    "scss/no-empty-blocks": "error",
-    "css/selector-max-type": ["error", { max: 1 }],
-"css/no-redundant-values": "error",
-"css/color-no-invalid-hex": "error"
-        },
-    plugins: {
-      css: cssPlugin
-    },
-    },
+{
+  files: ['**/*.{css,scss}'],
+  language: 'css/css',
+  languageOptions: {
+    tolerant: true,
+  },
+  rules: {
+    'css/no-empty-blocks': 'off',
+    'css/selector-max-type': ['error', { max: 1 }],
+    'css/no-redundant-values': 'error',
+    'css/color-no-invalid-hex': 'error'
+  },
+  plugin: {
+    cssPlugin: '@eslint/css'
+  },
+}
 ];

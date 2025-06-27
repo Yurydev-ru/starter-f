@@ -23,17 +23,18 @@ export default defineNuxtConfig({
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1'},
         { name: 'description', content: 'Nuxt 3 Starter' },
-        
+
       ],
     },
   },
   css: ['~/assets/scss/main.scss'],
   components: {
     dirs: [
-    { path: 'app/components', pathPrefix: false },
-    { path: 'layers/**/components', pathPrefix: false }
-  ]
+      { path: 'app/components', pathPrefix: false },
+      { path: 'layers/**/components', pathPrefix: false }
+    ]
   },
+  
   modules: ['@vite-pwa/nuxt'],
   vite: {
       css: {
@@ -92,7 +93,7 @@ export default defineNuxtConfig({
     },
     client: {
       installPrompt: true,
-      periodicSyncForUpdates: 20
+      periodicSyncForUpdates: 3600
     },
     devOptions: {
       enabled: true,
