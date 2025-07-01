@@ -5,10 +5,10 @@
 <template>
   <NuxtPwaManifest/>
   <div class="app-wrapper">
-    <AppHeader/>
+    <Header/>
     <main class="app-main">
       <slot/>
     </main>
-    <AppFooter/>
+    <Footer/>
   </div>
 </template>

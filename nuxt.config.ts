@@ -15,26 +15,15 @@ export default defineNuxtConfig({
     payloadExtraction: true,
     renderJsonPayloads: true
   },
-  app: {
-    baseURL: '/',
-    head: {
-      title: 'Nuxt 3 Starter',
-      meta: [
-        { charset: 'utf-8' },
-        { name: 'viewport', content: 'width=device-width, initial-scale=1'},
-        { name: 'description', content: 'Nuxt 3 Starter' },
-
-      ],
-    },
-  },
+  
   css: ['/assets/scss/main.scss'],
   components: {
     dirs: [
-      '~/components',
-      '~/app/components',
+      '~/components/ui',
+      '~/components/layout',
       {
-        path: '~/app/components',
-        pathPrefix: false,
+        path: '~/components/layout',
+        pathPrefix: true,
       },
     ],
   },
