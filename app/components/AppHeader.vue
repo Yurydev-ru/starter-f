@@ -3,21 +3,21 @@
 </script>
 
 <template>
-  <header class="app-header">
-    <div class="app-header__container">
-      <div class="glass">
+  <header class="app-header">  
+    <div class="container">
+      <nav class="nav">
         <NuxtLink class="logo _link" to="/">
           <p>Designe</p>
           <p>it`s the</p>
           <p>Style for Life</p>
         </NuxtLink>
-      </div>
+      </nav>
     </div>
     </header>
 </template>
 
 <style scoped lang="scss">
-.glass {
+.app-header {
   width: 100%;
   position: absolute;
   left: 0;

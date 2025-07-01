@@ -6,7 +6,9 @@
   <NuxtPwaManifest/>
   <div class="app-wrapper">
     <AppHeader/>
-    <slot/>
+    <main class="app-main">
+      <slot/>
+    </main>
     <AppFooter/>
   </div>
 </template>

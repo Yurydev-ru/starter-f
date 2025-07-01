@@ -13,37 +13,13 @@ html {
     }
 }
 
-.app-header, 
-.app-footer {
-  &__container {
-    width: 100%;
-    max-width: 1520px;
-    height: 100%;
-    padding: 20px 0;
-    margin: 0 auto;
-    position: relative;
-  }
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
-
-
-.app-header,
-.app-footer {
-    width: 100%;
-    min-height: 90px;
-}
-
-// .app-header__container{
-//     position: absolute;
-//     width: 100%;
-//     left: 0;
-// }
-
-// .app-header__container {
-//     top: 20px;
-//     z-index: 1;
-    
-// }
 
 .app-wrapper {
     display: flex;
@@ -56,6 +32,7 @@ html {
 }
 
 .app-main {
+    padding: 25px 0;
     flex: 1 1 auto;
     overflow-y: auto;
     scrollbar-width: none;
