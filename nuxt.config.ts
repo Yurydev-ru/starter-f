@@ -27,14 +27,17 @@ export default defineNuxtConfig({
       ],
     },
   },
-  css: ['~/assets/scss/main.scss'],
+  css: ['/assets/scss/main.scss'],
   components: {
     dirs: [
-      { path: 'app/components', pathPrefix: false },
-      { path: 'layers/**/components', pathPrefix: false }
-    ]
+      '~/components',
+      '~/app/components',
+      {
+        path: '~/app/components',
+        pathPrefix: false,
+      },
+    ],
   },
-  
   modules: ['@vite-pwa/nuxt'],
   vite: {
       css: {
