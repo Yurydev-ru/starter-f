@@ -8,9 +8,7 @@
       <div class="glass">
         <nav class="app-nav"> 
         <div class="app-nav__container">
-          <NuxtLink class="_link" to="/">About</NuxtLink>
-          <NuxtLink class="_link" to="/">Contact</NuxtLink>
-          <NuxtLink class="_link" to="/">Blog</NuxtLink>
+          <p>weeee</p>
         </div>
         </nav>
       </div>

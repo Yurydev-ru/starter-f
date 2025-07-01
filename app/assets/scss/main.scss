@@ -1,5 +1,5 @@
-@use 'base/reset';
-@use 'abstracts/variables';
-@use 'abstracts/mixins';
-@use 'abstracts/util';
-@use 'base/global';
+@use 'abstracts/_mixins';
+@use 'base/_global';
+@use 'base/_reset';
+@use 'abstracts/_util';
+@use 'abstracts/_variables';
