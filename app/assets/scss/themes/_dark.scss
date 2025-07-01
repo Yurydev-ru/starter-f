@@ -1,0 +1,19 @@
+:root {
+  /* Темная тема (по умолчанию) */
+  --c-dark-1: #0A0A0A;
+  --c-dark-2: #1E1E1E;
+  --c-dark-3: #2E2E2E;
+
+  --c-gray-1: #B3B3B3;
+  --c-gray-2: #7A7A7A;
+  --c-gray-3: #4D4D4D;
+
+  --c-accent-start: #FF0080;
+  --c-accent-end: #FF4080;
+
+  --c-white: #FFFFFF;
+  --c-text: var(--c-gray-1);
+  --c-bg: var(--c-dark-1);
+  --c-bg-alt: var(--c-dark-2);
+  --c-bg-popup: var(--c-dark-3);
+}

@@ -1,12 +1,12 @@
 :root {
-  --bg-primary: #760000;
-  --bg-secondary: #f5f5f5;
-  --bg-section: #1a1a1a;
-  --bg-accent: #ff4081;
-  --color-accent: #ff4080;
-  --text-color-secondary:rgba(12, 236, 131, 0.8);
-  --text-color-primary: rgba(201, 201, 201, 0.8);
-  --font-base: 'Inter', sans-serif;
+  --bg-primary: #fafafa;
+  --bg-color-surface: #1b1d223c;
+  --color-border-surface: #5651511f;
+  --bg-accent: #db1226;
+  --color-accent: #ffffff;
+  --text-primary: #161616;
+  --text-secondary: #313131;
+  --font-base: "Jost", sans-serif;
   --font-size-base: 1rem;
   --font-size-sm: 0.875rem;
   --font-sixe-md: 1.125rem;
@@ -16,10 +16,11 @@
 }
 
 [data-theme="dark"] {
-  --bg-primary: #1a1a1a;
-  --bg-secondary: #383838;
-  --bg-accent: #ff4081;
-  --color-accent: #ff4080;
+  --bg-primary: #0a0a0a;
+  --bg-color-surface: #1e1e1e;
+  --color-border-surface: #4d4d4d;
+  --bg-accent: #e0193a;
+  --color-accent: #ffffff;
   --text-primary: #ededed;
   --text-secondary: #f5f5f5;
 }
