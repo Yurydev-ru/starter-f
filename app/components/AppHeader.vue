@@ -19,6 +19,6 @@
 <style scoped lang="scss">
 .app-header {
   top: 0;
-  box-shadow: 0 5px 10px 10px rgb(13 13 14 / 49%);
+  box-shadow: 0 5px 10px 10px rgba(13, 13, 14, 0.36);
 }
 </style>

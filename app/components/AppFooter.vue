@@ -12,7 +12,7 @@
 
 <style scoped lang="scss">
 .app-footer {
-  box-shadow: 0 -5px 10px 10px rgb(13 13 14 / 49%);
+  box-shadow: 0 -5px 20px 10px rgb(13 13 14 / 49%);
   bottom: 0;
 }
 </style>
