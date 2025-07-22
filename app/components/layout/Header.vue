@@ -11,6 +11,7 @@
           <p>it`s the</p>
           <p>Style for Life</p>
         </NuxtLink>
+        <NuxtLink class="nav-link _link" to="/about">Home</NuxtLink>
       </nav>
     </div>
     </header>

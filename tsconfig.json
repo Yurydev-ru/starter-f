@@ -1,31 +1,39 @@
 {
+  "extends": "./.nuxt/tsconfig.json",
   "compilerOptions": {
-    "moduleResolution": "bundler",
-    "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "skipLibCheck": true,
-    "incremental": true,
+    "target": "ESNext",
     "module": "esnext",
-    "target": "es2023",
-    "strict": true,
-    "forceConsistentCasingInFileNames": true,
+    "moduleResolution": "bundler",
+    "lib": ["ESNext", "DOM", "DOM.Iterable"],
+    "types": [
+      "@types/node",
+      "vite/client",
+    ],
+    "paths": {
+      "~/*": ["./*"],
+      "@/*": ["./*"]
+    },
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "lib": ["ESNext", "DOM", "DOM.Iterable"],
-    "types": ["vite/client"],
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "incremental": true,
+    "jsx": "preserve",
+    "jsxImportSource": "vue",
+    "verbatimModuleSyntax": true,
+    "strict": true
   },
   "include": [
     "**/*.ts",
+    "**/*.tsx",
     "**/*.vue",
     ".nuxt/**/*",
-
+    "nuxt.config.ts"
   ],
   "exclude": [
     "node_modules",
     "dist",
     ".output",
     "**/*.md"
-  ],
+  ]
 }
