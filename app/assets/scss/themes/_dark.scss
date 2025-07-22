@@ -1,19 +1,35 @@
 :root {
-  /* Темная тема (по умолчанию) */
-  --c-dark-1: #0A0A0A;
-  --c-dark-2: #1E1E1E;
-  --c-dark-3: #2E2E2E;
+  /** Base colors */
+--clr-dark-a0: #000000;
+--clr-light-a0: #ffffff;
 
-  --c-gray-1: #B3B3B3;
-  --c-gray-2: #7A7A7A;
-  --c-gray-3: #4D4D4D;
+/** Theme primary colors */
+--clr-primary-a0: #e0d204;
+--clr-primary-a10: #e5d73c;
+--clr-primary-a20: #eadc59;
+--clr-primary-a30: #efe173;
+--clr-primary-a40: #f3e58b;
+--clr-primary-a50: #f6eaa3;
 
-  --c-accent-start: #FF0080;
-  --c-accent-end: #FF4080;
+/** Theme surface colors */
+--clr-surface-a0: #121212;
+--clr-surface-a10: #282828;
+--clr-surface-a20: #3f3f3f;
+--clr-surface-a30: #575757;
+--clr-surface-a40: #717171;
+--clr-surface-a50: #8b8b8b;
 
-  --c-white: #FFFFFF;
-  --c-text: var(--c-gray-1);
-  --c-bg: var(--c-dark-1);
-  --c-bg-alt: var(--c-dark-2);
-  --c-bg-popup: var(--c-dark-3);
+/** Theme tonal surface colors */
+--clr-surface-tonal-a0: #242217;
+--clr-surface-tonal-a10: #39372c;
+--clr-surface-tonal-a20: #4e4c43;
+--clr-surface-tonal-a30: #65635b;
+--clr-surface-tonal-a40: #7d7b74;
+--clr-surface-tonal-a50: #96948e;
+
+/** Examples */
+// .bg-primary {
+//  color: var(--clr-primary-a50);
+//  background-color: var(--clr-surface-a0);
+// }
 }
