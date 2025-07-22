@@ -7,7 +7,7 @@ export default defineNuxtConfig({
     compressPublicAssets: true,
     minify: true
   },
-  css: ['/assets/scss/main.scss'],
+  css: ['~/assets/scss/main.scss'],
   components: {
     dirs: [
       '~/components/ui',
