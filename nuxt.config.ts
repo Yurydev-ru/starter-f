@@ -6,8 +6,14 @@ export default defineNuxtConfig({
     compressPublicAssets: true,
     minify: true
   },
-  css: ['~/assets/scss/main.scss'],
+  css: ['@/assets/scss/main.scss'],
   modules: [],
+  components: [
+    {
+      path: '~/components',
+      pathPrefix: false,
+    },
+  ],
   vite: {
       css: {
       preprocessorOptions: {
