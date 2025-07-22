@@ -7,17 +7,6 @@ export default defineNuxtConfig({
     compressPublicAssets: true,
     minify: true
   },
-  future: {
-    compatibilityVersion: 4,
-  },
-  features: {
-    inlineStyles: false
-  },
-  experimental: {
-    payloadExtraction: true,
-    renderJsonPayloads: true
-  },
-  
   css: ['/assets/scss/main.scss'],
   components: {
     dirs: [
@@ -38,8 +27,8 @@ export default defineNuxtConfig({
       preprocessorOptions: {
         scss: {
           additionalData: `
-          @use "/assets/scss/abstracts/variables" as *;
-          @use "/assets/scss/abstracts/mixins" as *;
+          @use "~/assets/scss/abstracts/variables" as *;
+          @use "~/assets/scss/abstracts/mixins" as *;
           `
         }
       }
