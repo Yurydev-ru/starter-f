@@ -4,6 +4,8 @@ export default defineNuxtConfig({
   ssr: false,
   nitro: {
     preset: 'vercel',
+    compressPublicAssets: true,
+    minify: true
   },
   future: {
     compatibilityVersion: 4,
@@ -29,6 +31,9 @@ export default defineNuxtConfig({
   },
   modules: ['@vite-pwa/nuxt'],
   vite: {
+    optimizeDeps: {
+    esbuildOptions: { target: 'es2022' }
+  },
       css: {
       preprocessorOptions: {
         scss: {
