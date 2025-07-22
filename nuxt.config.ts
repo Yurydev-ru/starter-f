@@ -8,16 +8,6 @@ export default defineNuxtConfig({
     minify: true
   },
   css: ['~/assets/scss/main.scss'],
-  components: {
-    dirs: [
-      '~/components/ui',
-      '~/components/layout',
-      {
-        path: '~/components/layout',
-        pathPrefix: true,
-      },
-    ],
-  },
   modules: ['@vite-pwa/nuxt'],
   vite: {
     optimizeDeps: {
