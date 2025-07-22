@@ -26,7 +26,7 @@ export default defineNuxtConfig({
       enabled: true
     },
   },
-  compatibilityDate: '2025-05-15',
+  compatibilityDate: '2024-12-05',
   // pwa: {
   //   manifest: {
   //     name: 'Nuxt 3 Starter',

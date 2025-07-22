@@ -1,24 +1,44 @@
-# Nuxt dev/build outputs
-.output
-.data
+*.log
 .nuxt
-.nitro
-.cache
-dist
+.output
+.eslintcache
+.env
+.yarn/*
+!.yarn/releases
+!.yarn/plugins
+nuxt.d.ts
 
-# Node dependencies
-node_modules
+# compiled output
+/dist
+/storybook-static
+/node_modules
 
 # Logs
 logs
 *.log
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
 
-# Misc
+# OS
 .DS_Store
-.fleet
-.idea
 
-# Local env files
-.env
-.env.*
-!.env.example
+# Tests
+/coverage
+/.nyc_output
+
+# IDEs and editors
+/.idea
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+*.code-workspace
+
+# IDE - VSCode
+.vercel
+.vercel
