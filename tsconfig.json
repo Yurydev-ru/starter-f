@@ -1,39 +1,30 @@
 {
-  "extends": "./.nuxt/tsconfig.json",
+  // https://nuxt.com/docs/guide/concepts/typescript
+  "files": [],
+  "references": [
+    {
+      "path": "./.nuxt/tsconfig.app.json"
+    },
+    {
+      "path": "./.nuxt/tsconfig.server.json"
+    },
+    {
+      "path": "./.nuxt/tsconfig.shared.json"
+    },
+    {
+      "path": "./.nuxt/tsconfig.node.json"
+    }
+  ],
   "compilerOptions": {
-    "target": "ESNext",
-    "module": "esnext",
-    "moduleResolution": "bundler",
-    "lib": ["ESNext", "DOM", "DOM.Iterable"],
+    "strict": true,
     "types": [
       "@types/node",
-      "vite/client",
+      "@types/share",
+      "@types/glob"
     ],
+    "baseUrl": ".",
     "paths": {
-      "~/*": ["./*"],
       "@/*": ["./*"]
-    },
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "forceConsistentCasingInFileNames": true,
-    "resolveJsonModule": true,
-    "incremental": true,
-    "jsx": "preserve",
-    "jsxImportSource": "vue",
-    "verbatimModuleSyntax": true,
-    "strict": true
-  },
-  "include": [
-    "**/*.ts",
-    "**/*.tsx",
-    "**/*.vue",
-    ".nuxt/**/*",
-    "nuxt.config.ts"
-  ],
-  "exclude": [
-    "node_modules",
-    "dist",
-    ".output",
-    "**/*.md"
-  ]
+    }
+  }
 }
